@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class='navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top' onmouseover="move()" id="nav"
+        onmouseout="out()">
+        <div class="container">
+            <a href='#' class='navbar-brand'>Coder.com</a>
+
+            <button class='navbar-toggler' type="button" data-bs-toggle='collapse' data-bs-target='#navmenu'>
+                <span class='navbar-toggler-icon'></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id='navmenu'>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-items">
+                        <a href='#learn' class="nav-link">javascript</a>
+                    </li>
+                    <li class="nav-items">
+                        <a class="nav-link">python</a>
+                    </li>
+                    <li class="nav-items">
+                        <a class="nav-link">css-flex-box</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--end nav-->
+    <br><br>
+    <!-- showcase -->
+    <section class="bg-dark text-light text-center p-5 text-sm-start">
+        <div class="container">
+            <div class="d-sm-flex align-items-center justify-content-between">
+                <div class="">
+                    <h1>Welcome to web development in <span class="text-danger">React</span> </h1>
+                    <p class="lead my-4">
+                        Learn react do <span class="text-warning"> REAL WORLD PROJECTS</span> and get certified.
+                        And build <span class="text-primary">API's</span>
+                    </p>
+                    <button class="btn btn-primary">Enroll now</button>
+                </div>
+                <img src="react.png" alt="showcase" class="w-50 h-25  d-none d-md-block" style="margin: auto;">
+
+            </div>
+        </div>
+    </section>
+    <!--end showcase-->
+
+    <!-- search -->
+    <section class="text-light py-5" style="background-color: rgb(75, 118, 158);">
+        <div class="container">
+            <div class="row">
+                <div class="col align-items-center py-2 text-center">
+                    <h3 class="">Search:</h3>
+                </div>
+                <div class="col-sm-8">
+                    <div class="input-group mb-3 py-2">
+                        <span class="input-group-text" id="basic-addon1">@</span>
+                        <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+                            aria-describedby="basic-addon1">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--end search-->
+
+    <!-- grid -->
+
+    <section class='py-5'>
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="card bg-dark text-light text-center">
+                        <div class="card-body">
+                            <i class="bi bi-x-diamond-fill"></i>
+                            <h5 class="card-title py-3">Card title</h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem ratione in maiores
+                                tempore! In ut temporibus ducimus illo corporis vitae ex, minus obcaecati deserunt eius
+                                excepturi eaque natus blanditiis consequatur.
+                            </p>
+                            <a class="btn btn-primary">enroll</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card bg-secondary text-light text-center">
+                        <div class="card-body">
+                            <i class="bi bi-tools"></i>
+                            <h5 class="card-title py-3">Card title</h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem ratione in maiores
+                                tempore! In ut temporibus ducimus illo corporis vitae ex, minus obcaecati deserunt eius
+                                excepturi eaque natus blanditiis consequatur.
+                            </p>
+                            <a class="btn btn-warning">enroll</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card bg-danger text-light text-center">
+                        <div class="card-body">
+                            <i class="bi bi-trophy text-dark"></i>
+                            <h5 class="card-title py-3">Card title</h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem ratione in maiores
+                                tempore! In ut temporibus ducimus illo corporis vitae ex, minus obcaecati deserunt eius
+                                excepturi eaque natus blanditiis consequatur.
+                            </p>
+                            <a class="btn btn-dark">enroll</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--end grid-->
+
+    <!--info-->
+
+    <section>
+        <div class="container" id='learn'>
+            <div class="row  align-items-center justify-content-between">
+                <div class="col-lg-7 d-flex justify-content-center">
+                    <img src="machine-learning.png" alt="img" class="img-fluid w-50 h-50">
+                </div>
+                <div class="col-lg-5">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius fuga ex eum, praesentium commodi
+                    laboriosam totam cupiditate quod nostrum saepe nemo harum nisi, quos iste tempore officiis omnis ut
+                    perspiciatis architecto. Quod asperiores, nulla ut dicta deserunt suscipit iste quas fugit molestias
+                    non vel blanditiis optio totam aperiam mollitia libero officia.<br>
+                    <div class="btn btn-primary my-3">
+                        read more
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--end info -->
+
+    <!-- faq -->
+    <section class="py-3">
+        <div class="container">
+            <div class="text-center align-items-center">
+                <h1
+                    style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif">
+                    Frequently asked questions</h1>
+                <div class="accordion accordion-flush py-2" id="accordionFlushExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                aria-controls="flush-collapseOne">
+                                Accordion Item #1
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                                demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion
+                                body.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                aria-controls="flush-collapseTwo">
+                                Accordion Item #2
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                                demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion
+                                body. Let's imagine this being filled with some actual content.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                aria-controls="flush-collapseThree">
+                                Accordion Item #3
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                                demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion
+                                body. Nothing more exciting happening here in terms of content, but just filling up the
+                                space to make it look, at least at first glance, a bit more representative of how this
+                                would look in a real-world application.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--end faq-->
+
+    <!-- person -->
+    <section class="py-5 bg-primary">
+        <div class="container">
+            <div class="text-white align-items-center text-center">
+                <h2>Our Industrial experts</h2>
+                <p class="lead mb-5">
+                    our experts are experienced with 5+ years
+                </p>
+            </div>
+            <div class="row g-4">
+                <!-- person1 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="card text-center bg-white">
+                        <div class="card-body">
+                            <img src="https://randomuser.me/api/portraits/men/20.jpg" alt="image"
+                                class="img-fluid rounded-circle mb-2">
+                            <h4 class="card-title mb-2">jhon</h4>
+                            <p class="lead">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, fuga!
+                            </p>
+                            <a href="#"><i class="bi bi-facebook"></i></a>
+                            <a href="#"><i class="bi bi-instagram text-danger"></i></a>
+                            <a href="#"><i class="bi bi-twitter"></i></a>
+                            <a href="#"><i class="bi bi-whatsapp text-success"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- person2 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="card text-center bg-white">
+                        <div class="card-body">
+                            <img src="https://randomuser.me/api/portraits/men/15.jpg" alt="image"
+                                class="img-fluid rounded-circle mb-2">
+                            <h4 class="card-title mb-2">Aron</h4>
+                            <p class="lead">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, fuga!
+                            </p>
+                            <a href="#"><i class="bi bi-facebook"></i></a>
+                            <a href="#"><i class="bi bi-instagram text-danger"></i></a>
+                            <a href="#"><i class="bi bi-twitter"></i></a>
+                            <a href="#"><i class="bi bi-whatsapp text-success"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- person3 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="card text-center bg-white">
+                        <div class="card-body">
+                            <img src="https://randomuser.me/api/portraits/men/44.jpg" alt="image"
+                                class="img-fluid rounded-circle mb-2">
+                            <h4 class="card-title mb-2">Rio</h4>
+                            <p class="lead">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, fuga!
+                            </p>
+                            <a href="#"><i class="bi bi-facebook"></i></a>
+                            <a href="#"><i class="bi bi-instagram text-danger"></i></a>
+                            <a href="#"><i class="bi bi-twitter"></i></a>
+                            <a href="#"><i class="bi bi-whatsapp text-success"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- person4 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="card text-center bg-white">
+                        <div class="card-body">
+                            <img src="https://randomuser.me/api/portraits/men/54.jpg" alt="image"
+                                class="img-fluid rounded-circle mb-2">
+                            <h4 class="card-title mb-2">Brad</h4>
+                            <p class="lead">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, fuga!
+                            </p>
+                            <a href="#"><i class="bi bi-facebook"></i></a>
+                            <a href="#"><i class="bi bi-instagram text-danger"></i></a>
+                            <a href="#"><i class="bi bi-twitter"></i></a>
+                            <a href="#"><i class="bi bi-whatsapp text-success"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end person -->
+
+    <!-- info -->
+    <section class="py-5 fw-bold">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg">
+                    <h2 class="text-center m-7">Contact and Info</h2>
+                    <ul class="list-group list-group-flush lead text-center py-5">
+                        <li class="list-group-item">
+                            <span class="fw-bold">Thirunelveli</span> district.
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold">Salem</span> district.
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold">Kaniyakumari</span> district.
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold">Madurai</span> district.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- endinfo -->
+
+    <footer class="p-5 text-white align-items-center bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    <p class="lead">
+                        Coder.com and &copy; React Bootcamp
+                    </p>
+                </div>
+                <div class="col-md-1 text-center">
+                    <a href="#" class="col text-white">
+                        <i class="bi bi-arrow-up-circle-fill lead" data-bs-toggle="tooltip" data-bs-placement="right" title="Back to top"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
+    integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
+    crossorigin="anonymous"></script>
+<script>
+    function move() {
+        document.getElementById('nav').style.borderBottom = 'solid 3px rgb(189, 78, 78)'
+    }
+    function out() {
+        document.getElementById('nav').style.borderBottom = ''
+    }
+</script>
+
+<script>
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+</script>
+
+</html>
